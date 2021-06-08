@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { ScaledBox } from './components/scaled-box/scaled-box.component';
+import { ScaledButton } from './components/scaled-button/scaled-button.component';
+import { ScaledTitle } from './components/scaled-title/scaled-title.component';
+import { ScaledSlider } from './components/scaled-slider/scaled-slider.component';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <ScaledBox>
+         <ScaledTitle>Title</ScaledTitle>
+         <ScaledButton>SCALED</ScaledButton>
+         <ScaledSlider/>
+       </ScaledBox>
       </header>
     </div>
   );
